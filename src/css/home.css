@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font-grande: 'TT Hoves Pro Trial', sans-serif;
+    --font-pequena: 'Merriweather', 'serif';
+    --font-titulo: 'Tourney', 'sans-serif';
+
+    --color-black: #000;
+    --color-gray1: #3d4143;
+    --color-gray2: #9c9d9d;
+    --color-white: #f6f6f6;
+    --color-destaque1: rgb(86, 156, 194);
+    --color-destaque2: rgb(163, 203, 243);
+    
+
+    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
+    --verde-claro: rgb(188, 233, 228);
+    --cinza-escuro: rgb(70, 84, 90);
+    --azul-claro: rgb(163, 203, 243);
+    --preto: rgb(3, 3, 4);
+    --azul-medio: rgb(86, 156, 194);
+}
+
+/*************** INICIO *****/
+.inicio {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+    user-select: none;
+}
+
+.container-inicio {
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-inicio img {
+    width: 45%;
+    height: 45%;
+}
+
+.conteudo-inicio {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.titulo-inicio {
+    font-size: clamp(1rem, 2.5vw + .8rem, 3rem);
+    font-family: var(--font-grande);
+    font-weight: normal;
+}
+
+.destaque-inicio {
+    font-weight: lighter;
+    font-family: var(--font-titulo);
+}
+
+.paragrafo-inicio p {
+    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+    max-width: 900px;
+    color: var(--cinza-escuro);
+    font-family: var(--font-pequena);
+}
+
+/* Botão Inicio */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta span {
+    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: var(--color-destaque1);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: var(--font-pequena);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--color-destaque1);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+
+    background: var(--color-destaque1);
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+    stroke: var(--color-destaque2);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.complemento-inicio {
+    position: absolute;
+    bottom: 2rem;
+    width: 100vw;
+    padding: 0rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.complemento-inicio .text {
+    width: 200px;
+}
+
+.complemento-inicio .qr-code {
+    width: 80px;
+    opacity: .2;
+    transition: all .5s ease-in-out;
+}
+
+.qr-code:hover {
+    opacity: 1;
+}
+

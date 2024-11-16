@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font-titulo: 'Tourney', 'sans-serif';
+    --font-grande: 'TT Hoves Pro Trial', sans-serif;
+    --font-pequena: 'Merriweather', 'serif';
+    --color-destaque1: rgb(86, 156, 194);
+    --color-destaque2: rgb(163, 203, 243);
+    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
+    --verde-claro: rgb(188, 233, 228);
+    --cinza-escuro: rgb(70, 84, 90);
+    --azul-claro: rgb(163, 203, 243);
+    --preto: rgb(3, 3, 4);
+    --branco: #f6f6f6;
+    --azul-medio: rgb(86, 156, 194);
+}
+.header{
+    position: fixed;
+    width: 100%;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;;
+    transition: top 0.3s ease-in-out;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    padding: .6rem;
+    z-index: 2;
+}
+/* Logo */
+.logo {
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+/* Menu Navegação */
+.menu-aberto {
+    position: fixed;
+    left: 0;
+    top: 0; /* Mantém o menu no topo */
+    width: 100%; /* Preenche a largura da tela */
+    height: 100vh; /* Preenche a altura total da tela */
+    background-color: var(--preto); /* Cor de fundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita que o conteúdo transborde */
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; /* Inicialmente invisível */
+    z-index: 98; /* Certifique-se de que o valor do z-index seja maior que os outros elementos */
+}
+
+.menu-aberto.active {
+    height: 100vh;
+    opacity: 1;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav-menu a {
+    user-select: none;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.menu-aberto.active .nav-menu a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-menu a:hover {
+    color: var(--color-destaque1);
+    transition: all 0.3s ease;
+}
