@@ -30,6 +30,8 @@
     justify-content: center;
 }
 .container-sobre{
+    box-shadow: 10px 10px var(--cinza-escuro);
+    border-radius: 2%;
     background-color:black ;
     width: 80%;
     height: 80%;
@@ -39,6 +41,7 @@
     text-align: center;
     color: var(--color-white);
     padding-top: 1rem;
+    font-size: 5rem;
 }
 
 .conteudo-sobre{
@@ -52,24 +55,206 @@
 }
 .left-sobre{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 4rem;
 }
-.rigth-sobre{
+.right-sobre{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
 }
 .textos-sobre{
    color: var(--color-white); 
 }
 .textos-sobre h1{
+    text-align: center;
+    font-size: 3rem;
     font-family: var(--font-grande);
 }
 .textos-sobre p{
-    padding-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--color-gray2);
+    line-height: 1.5;
+    letter-spacing: 4.5px;
+    padding-top: 3rem;
     font-family: var(--font-pequena);
 }
-.rigth-sobre img{
+.redes-sociais {
+    padding-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.redes-sociais a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--color-gray2);
+    font-size: 1.5rem;
+    width: 50%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
+}
+
+.right-sobre img{
+    border-radius: 4%;
     align-items: center;
     width: 50%;
     height: 50%;
+}
+.profile-image{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:430px){
+    .container-sobre {
+        height: auto;
+        width: 95%;
+        box-shadow: 5px 5px var(--cinza-escuro);
+    }
+
+    .conteudo-sobre {
+        padding: .8rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo {
+        font-size: 3rem;
+    }
+    .left-sobre {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 0;
+    }
+
+    .textos-sobre h1 {
+        font-size: 2rem;
+        font-family: var(--font-grande);
+    }
+    .textos-sobre p {
+        font-size: .8rem;
+        color: var(--color-gray2);
+        line-height: 1.5;
+        letter-spacing: 4.5px;
+        padding-top: 1rem;
+        font-family: var(--font-pequena);
+    }
+    .redes-sociais {
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .redes-sociais a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: var(--color-gray2);
+        font-size: 1rem;
+        width: 70%;
+        padding-bottom: 0;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
+    }
+    .right-sobre {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    [data-aos][data-aos-duration="1500"],
+    body[data-aos-duration="500"] [data-aos] {
+        transition-duration: 0.5s;
+    }
+}
+
+
+
+@media (max-width:320px) {
+
+    .container-sobre {
+        height: auto;
+        width: 95%;
+        box-shadow: 5px 5px var(--cinza-escuro);
+    }
+
+    .conteudo-sobre {
+        padding: .8rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo {
+        font-size: 3rem;
+    }
+    .left-sobre {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 0;
+    }
+
+    .textos-sobre h1 {
+        font-size: 2rem;
+        font-family: var(--font-grande);
+    }
+    .textos-sobre p {
+        font-size: .8rem;
+        color: var(--color-gray2);
+        line-height: 1.5;
+        letter-spacing: 4.5px;
+        padding-top: 1rem;
+        font-family: var(--font-pequena);
+    }
+    .redes-sociais {
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .redes-sociais a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: var(--color-gray2);
+        font-size: 1rem;
+        width: 70%;
+        padding-bottom: 0;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
+    }
+    .right-sobre {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 }

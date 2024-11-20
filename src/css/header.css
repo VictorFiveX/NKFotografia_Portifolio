@@ -82,17 +82,17 @@
 .menu-aberto {
     position: fixed;
     left: 0;
-    top: 0; /* Mantém o menu no topo */
-    width: 100%; /* Preenche a largura da tela */
-    height: 100vh; /* Preenche a altura total da tela */
-    background-color: var(--preto); /* Cor de fundo */
+    top: 0; 
+    width: 100%; 
+    height: 100vh; 
+    background-color: var(--preto); 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Evita que o conteúdo transborde */
+    overflow: hidden; 
     transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    opacity: 0; /* Inicialmente invisível */
-    z-index: 98; /* Certifique-se de que o valor do z-index seja maior que os outros elementos */
+    opacity: 0;
+    z-index: 98; 
 }
 
 .menu-aberto.active {
@@ -130,4 +130,9 @@
 .nav-menu a:hover {
     color: var(--color-destaque1);
     transition: all 0.3s ease;
+}
+@media (max-width:320px) {
+    .nav-menu a {
+        font-size: 2rem;
+    }
 }
