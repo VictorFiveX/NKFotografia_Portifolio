@@ -1,12 +1,11 @@
 /*************** PORTFOLIO *****/
 .portfolio {
     width: 100%;
-
     color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0rem 7rem 0rem;
+
 }
 
 .container-portfolio {
@@ -34,15 +33,13 @@
     text-align: center;
 }
 
-
 .container-case {
     max-width: 1400px;
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Ajusta o número de colunas dinamicamente */
-    grid-gap: 1rem; /* Espaço entre os itens */
+    grid-gap: .3rem; 
     padding: 1rem;
 }
 
@@ -50,10 +47,9 @@
 .case2,
 .case3,
 .case4 {
+    
     height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative; /* Necessário para posicionar o texto sobre a imagem */
 }
 
 .imagens-case {
@@ -111,4 +107,42 @@
 
 .next {
     right: 10px;
+}
+
+
+
+.case1 .slide, .case2 .slide, .case3 .slide, .case4 .slide {
+    position: relative; 
+}
+
+.text-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    height: 20%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta semi-transparente */
+    backdrop-filter: blur(10px); /* Aplica o desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores baseados no Webkit */
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0; /* Inicialmente escondido */
+    visibility: hidden; /* Esconde o texto */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Animação suave */
+    text-align: center;
+}
+
+/* Exibe o texto quando o hover é aplicado sobre o contêiner */
+.case1:hover .text-overlay, 
+.case2:hover .text-overlay, 
+.case3:hover .text-overlay, 
+.case4:hover .text-overlay {
+    opacity: 1;
+    visibility: visible;
 }

@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font-grande: 'TT Hoves Pro Trial', sans-serif;
+    --font-pequena: 'Merriweather', 'serif';
+    --font-titulo: 'Tourney', 'sans-serif';
+
+    --color-black: #000;
+    --color-gray1: #3d4143;
+    --color-gray2: #9c9d9d;
+    --color-white: #f6f6f6;
+    --color-destaque1: rgb(86, 156, 194);
+    --color-destaque2: rgb(163, 203, 243);
+    
+
+    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
+    --verde-claro: rgb(188, 233, 228);
+    --cinza-escuro: rgb(70, 84, 90);
+    --azul-claro: rgb(163, 203, 243);
+    --preto: rgb(3, 3, 4);
+    --azul-medio: rgb(86, 156, 194);
+}
+/*************** CONTATO *****/
+.contato {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    padding: 2rem 0rem 3rem 0rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+}
+
+.container-contato {
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline-contato {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-contato {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.titulo-contato h1 {
+    color: var(--color-black);
+    width: 50%;
+    font-size: 8vw;
+    font-weight: lighter;
+    font-family: var(--font-grande);
+}
+
+.descricao-contato {
+    width: 50%;
+    text-align: right;
+}
+
+.descricao-contato a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.conteudo-contato {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.formulario-contato {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.formulario-contato h2 {
+    font-size: 2rem;
+}
+
+.formulario-contato p {
+    font-size: 1.5rem;
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form input {
+    font-family: var(--font-pequena);
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.form textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    font-family: var(--font-pequena);
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
+}
+
+.btn {
+    background-color: var(--color-destaque1);
+    color: var(--color-black);
+    font-weight: bold;
+    width: 190px;
+    padding: 1rem 0rem;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    outline: none;
+    border-radius: 30px;
+}
+
+.logo-contato {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.logo-contato img {
+    width: 80%;
+    border-radius: 36px;
+}
+
+/*************** FOOTER *****/
+.footer {
+    background-color: var(--color-black);
+    width: 100%;
+    padding: 3rem 1rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-column {
+    align-items: flex-start;
+}
+
+.logo-column img {
+    width: 100px;
+}
+
+.menu-column {
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--color-destaque1);
+}
+
+.social-column {
+    text-align: right;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 0.5rem;
+}
+
+.social-links a:hover {
+    color: var(--color-destaque1);
+}
+
+.credits-column {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.credits-column p {
+    margin: 0.2rem 0;
+}

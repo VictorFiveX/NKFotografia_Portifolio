@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font-grande: 'TT Hoves Pro Trial', sans-serif;
+    --font-pequena: 'Merriweather', 'serif';
+    --font-titulo: 'Tourney', 'sans-serif';
+
+    --color-black: #000;
+    --color-gray1: #3d4143;
+    --color-gray2: #9c9d9d;
+    --color-white: #f6f6f6;
+    --color-destaque1: rgb(86, 156, 194);
+    --color-destaque2: rgb(163, 203, 243);
+    
+
+    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
+    --verde-claro: rgb(188, 233, 228);
+    --cinza-escuro: rgb(70, 84, 90);
+    --azul-claro: rgb(163, 203, 243);
+    --preto: rgb(3, 3, 4);
+    --azul-medio: rgb(86, 156, 194);
+}
+/*************** FOOTER *****/
+.footer {
+    background-color: var(--color-black);
+    width: 100%;
+    padding: 3rem 1rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-column {
+    align-items: flex-start;
+}
+
+.logo-column img {
+    width: 100px;
+}
+
+.menu-column {
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--color-destaque1);
+}
+
+.social-column {
+    text-align: right;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 0.5rem;
+}
+
+.social-links a:hover {
+    color: var(--color-destaque1);
+}
+
+.credits-column {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.credits-column p {
+    margin: 0.2rem 0;
+}
