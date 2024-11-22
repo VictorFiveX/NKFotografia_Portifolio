@@ -125,6 +125,27 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+    .servicos-cards {
+        max-width: 1000px;
+    }
+    .card-titulo {
+        width: 90%;
+        font-size: clamp(0.8rem, 2vw + .4rem, 1.6rem);
+    }
+}
+@media (min-width:1025px) AND (max-width: 1200px){
+
+    .servicos-cards {
+        max-width: 900px;
+    }
+    .card-titulo {
+        width: 90%;
+        font-size: clamp(0.8rem, 2vw + .4rem, 1.6rem);
+    }
+}
+
+
 @media (max-width:320px) {
 
     .headline-servicos {

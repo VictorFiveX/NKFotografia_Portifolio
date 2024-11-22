@@ -188,7 +188,43 @@
     }
 }
 
+@media (min-width: 1201px) and (max-width: 1440px){
+    .left-sobre {
+        gap: 0rem;
+    }
+}
 
+@media (min-width:1025px) AND (max-width: 1200px){
+    .redes-sociais a {
+    
+        width: 100%;
+        gap: 1rem;
+    }
+    .conteudo-sobre {
+        padding: 2rem;
+        gap: 1rem;
+        padding-top: 3rem;
+    }
+    .textos-sobre {
+        padding-left: 0rem !important;
+    }
+    .redes-sociais {
+        gap: 3rem;
+        padding-left: 0rem; 
+    }
+    .redes-sociais {
+        padding-top: 0rem;
+        width: 100%;
+        display: flex;
+        gap: 5rem;
+    }
+    .redes-sociais {
+        transform: none !important;
+        opacity: 1 !important;
+      }
+      
+      
+}
 
 @media (max-width:320px) {
 
