@@ -3,15 +3,6 @@
 @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-
 :root {
     --font-grande: 'TT Hoves Pro Trial', sans-serif;
     --font-pequena: 'Merriweather', 'serif';
@@ -25,6 +16,17 @@
     --preto: rgb(3, 3, 4);
     --azul-medio: rgb(86, 156, 194);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+
 
 /*  barra de rolagem  */
 ::-webkit-scrollbar {

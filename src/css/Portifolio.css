@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-grande: 'TT Hoves Pro Trial', sans-serif;
+    --font-pequena: 'Merriweather', 'serif';
+    --font-titulo: 'Tourney', 'sans-serif';
+    --color-destaque1: rgb(86, 156, 194);
+    --color-destaque2: rgb(163, 203, 243);
+    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
+    --verde-claro: rgb(188, 233, 228);
+    --cinza-escuro: rgb(70, 84, 90);
+    --azul-claro: rgb(163, 203, 243);
+    --preto: rgb(3, 3, 4);
+    --azul-medio: rgb(86, 156, 194);
+}
+
 /*************** PORTFOLIO *****/
 .portfolio {
     width: 100%;
@@ -146,3 +164,7 @@
     opacity: 1;
     visibility: visible;
 }
+@media (min-width: 1201px) and (max-width: 1440px){}
+@media (min-width:769px) AND (max-width: 1200px){}
+@media (min-width:481px) AND (max-width: 768px){}
+@media (min-width:320px) AND (max-width: 480px){}

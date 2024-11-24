@@ -115,7 +115,164 @@
     justify-content: center;
     align-items: center;
 }
-@media (max-width:430px){
+
+/* Laptops / Monitores */
+@media (min-width: 1201px) and (max-width: 1440px){
+    .left-sobre {
+        gap: 0rem;
+    }
+}
+/* Tablets (Paisagem) */
+@media (min-width:769px) AND (max-width: 1200px){
+    .redes-sociais a {
+    
+        width: 100%;
+        gap: 1rem;
+    }
+    .conteudo-sobre {
+        padding-top: 3rem;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .textos-sobre {
+        padding-left: 0rem !important;
+    }
+
+    .redes-sociais {
+        padding-left: 0rem; 
+        padding-top: 0rem;
+        width: 100%;
+        display: flex;
+        gap: 5rem;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+    .left-sobre {
+        width: 100%;
+    }
+    .right-sobre {
+        width: 100%;
+    }
+    .textos-sobre p {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .container-sobre {
+        width: 90%;
+        height: 95%;
+    }
+
+    .left-sobre {
+        width: 100%;
+        gap: 2rem;
+    }
+    .redes-sociais a {
+        font-size: 1.2rem;
+        width: 35%;
+    }
+    .right-sobre {
+        width: 100%;
+    }
+    .textos-sobre {
+        padding-left: 2rem;
+    }
+    .redes-sociais {
+        padding-left: 1rem;
+        padding-top: 0rem;
+    }
+    .right-sobre img {
+        width: 40%;
+    }
+      
+}
+
+/* Celulares medios */
+@media (min-width:481px) AND (max-width: 768px){
+
+    .textos-sobre p {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .container-sobre {
+        width: 90%;
+        height: 95%;
+    }
+    .conteudo-sobre {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .left-sobre {
+        width: 100%;
+        gap: 2rem;
+    }
+    .redes-sociais a {
+        font-size: 1.2rem;
+        width: 35%;
+    }
+    .right-sobre {
+        width: 100%;
+    }
+    .textos-sobre {
+        padding-left: 2rem;
+    }
+    .redes-sociais {
+        padding-left: 1rem;
+        padding-top: 0rem;
+    }
+    .right-sobre img {
+        width: 45%;
+    }
+}
+
+/* Celulares Pequenos */
+@media  (max-width: 480px) {
+
+
+    .textos-sobre p {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .container-sobre {
+        width: 90%;
+        height: 95%;
+    }
+    .conteudo-sobre {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .left-sobre {
+        width: 100%;
+        gap: 2rem;
+    }
+    .redes-sociais a {
+        font-size: 1.2rem;
+        width: 35%;
+    }
+    .right-sobre {
+        width: 100%;
+    }
+    .textos-sobre {
+        padding-left: 2rem;
+    }
+    .redes-sociais {
+        transform: none !important;
+        opacity: 1 !important;
+        padding-left: 1rem;
+        padding-top: 0rem;
+    }
+    .right-sobre img {
+        width: 45%;
+    }
+
     .container-sobre {
         height: auto;
         width: 95%;
@@ -124,12 +281,7 @@
 
     .conteudo-sobre {
         padding: .8rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+
     }
     .titulo {
         font-size: 3rem;
@@ -144,7 +296,7 @@
     }
 
     .textos-sobre h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: var(--font-grande);
     }
     .textos-sobre p {
@@ -186,47 +338,7 @@
     body[data-aos-duration="500"] [data-aos] {
         transition-duration: 0.5s;
     }
-}
 
-@media (min-width: 1201px) and (max-width: 1440px){
-    .left-sobre {
-        gap: 0rem;
-    }
-}
-
-@media (min-width:1025px) AND (max-width: 1200px){
-    .redes-sociais a {
-    
-        width: 100%;
-        gap: 1rem;
-    }
-    .conteudo-sobre {
-        padding: 2rem;
-        gap: 1rem;
-        padding-top: 3rem;
-    }
-    .textos-sobre {
-        padding-left: 0rem !important;
-    }
-    .redes-sociais {
-        gap: 3rem;
-        padding-left: 0rem; 
-    }
-    .redes-sociais {
-        padding-top: 0rem;
-        width: 100%;
-        display: flex;
-        gap: 5rem;
-    }
-    .redes-sociais {
-        transform: none !important;
-        opacity: 1 !important;
-      }
-      
-      
-}
-
-@media (max-width:320px) {
 
     .container-sobre {
         height: auto;
@@ -256,7 +368,7 @@
     }
 
     .textos-sobre h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: var(--font-grande);
     }
     .textos-sobre p {
@@ -294,3 +406,4 @@
         width: 100%;
     }
 }
+
