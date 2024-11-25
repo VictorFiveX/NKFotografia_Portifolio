@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
@@ -119,9 +120,91 @@
 /* Laptops / Monitores */
 @media (min-width: 1201px) and (max-width: 1440px){
     .left-sobre {
-        gap: 0rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 0;
+    }
+
+    .textos-sobre p {
+        padding-left: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        color: var(--color-gray2);
+        line-height: 1.5;
+        letter-spacing: 4.5px;
+        font-family: var(--font-pequena);
+    }
+
+    .textos-sobre h1 {
+        font-size: 2.8rem;
+        font-family: var(--font-grande);
+    }
+
+    .container-sobre {
+        width: 80%;
+        height: 80%;
+        box-shadow: 5px 5px var(--cinza-escuro);
+    }
+
+    .conteudo-sobre {
+        padding: .8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .titulo {
+        font-size: 5rem;
+    }
+
+    .redes-sociais {
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .redes-sociais a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: var(--color-gray2);
+        font-size: 1rem;
+        width: 70%;
+        padding-bottom: 0;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
+    }
+
+    .right-sobre {
+        width: 50%;
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-sobre img {
+        width: 50%;
+    }
+
+    [data-aos][data-aos-duration="1500"],
+    body[data-aos-duration="500"] [data-aos] {
+        transition-duration: 0.5s;
     }
 }
+
 /* Tablets (Paisagem) */
 @media (min-width:769px) AND (max-width: 1200px){
     .redes-sociais a {
@@ -406,4 +489,3 @@
         width: 100%;
     }
 }
-

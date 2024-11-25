@@ -171,12 +171,6 @@
     .container-contato {
         max-width: 1200px;
     }
-    .textos-sobre {
-        padding-left: 4rem;
-    }
-    .redes-sociais {
-        padding-left: 3rem;
-    }
 }
 @media (min-width:769px) AND (max-width: 1200px){
     .container-contato {
