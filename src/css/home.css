@@ -163,7 +163,22 @@
     opacity: 1;
 }
 
-@media (min-width: 1201px) and (max-width: 1440px){}
-@media (min-width:769px) AND (max-width: 1200px){}
-@media (min-width:481px) AND (max-width: 768px){}
-@media (min-width:320px) AND (max-width: 480px){}
+@media (min-width: 1201px) and (max-width: 1440px){
+    
+}
+@media (min-width:769px) AND (max-width: 1200px){
+
+}
+@media (min-width:481px) AND (max-width: 768px){
+
+}
+@media (max-width: 480px){
+    .titulo-inicio img {
+        width: 75%;
+    }
+    .destaque-inicio{
+        align-items: center;
+        font-size: 2.7rem;
+       
+    }
+}

@@ -176,7 +176,7 @@
     }
 }
 
-@media (min-width:320px) AND (max-width: 480px) {
+@media (max-width: 480px) {
 
     .headline-servicos {
         padding-top: 2rem;
@@ -212,5 +212,8 @@
         min-height: 25%;
         padding: 2rem;
         gap: 7%;
+    }
+    .card-titulo {
+        width: 100%;
     }
 }

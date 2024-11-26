@@ -253,6 +253,11 @@
     .headline-contato {
         flex-direction: column;
     }
+    .titulo-contato h1{
+        font-family: var(--font-titulo);
+        width: 100%;
+        font-size: 4rem;
+    }
     .titulo-contato {
         height: 100%;
         width: 100%;
@@ -261,10 +266,22 @@
         justify-content: center;
         text-align: center;
     }
-    .descricao-contato a {
+    .lista-contato{
+        padding-top: 1rem;
+    }
+    .descricao-contato a { 
     font-weight: normal; 
+    font-size: 1rem;
     }
     .formulario-contato {
+        width:100%;
+    }
+
+    .logo-contato img{
         width: 100%;
+    }
+    .logo-contato {
+        width: 100%;
+        height: 100%;
     }
 }

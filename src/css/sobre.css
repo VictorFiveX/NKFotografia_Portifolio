@@ -241,6 +241,7 @@
     .textos-sobre p {
         font-size: 1rem;
         padding-top: 1rem;
+        padding-left: 2rem;
     }
 
     .container-sobre {
@@ -259,9 +260,7 @@
     .right-sobre {
         width: 100%;
     }
-    .textos-sobre {
-        padding-left: 2rem;
-    }
+
     .redes-sociais {
         padding-left: 1rem;
         padding-top: 0rem;
@@ -276,6 +275,7 @@
 @media (min-width:481px) AND (max-width: 768px){
 
     .textos-sobre p {
+        padding-left: 2rem;
         font-size: 1rem;
         padding-top: 1rem;
     }
@@ -301,9 +301,7 @@
     .right-sobre {
         width: 100%;
     }
-    .textos-sobre {
-        padding-left: 2rem;
-    }
+
     .redes-sociais {
         padding-left: 1rem;
         padding-top: 0rem;
@@ -318,6 +316,7 @@
 
 
     .textos-sobre p {
+        padding-left: 3rem;
         font-size: 1rem;
         padding-top: 1rem;
     }
@@ -343,9 +342,7 @@
     .right-sobre {
         width: 100%;
     }
-    .textos-sobre {
-        padding-left: 2rem;
-    }
+
     .redes-sociais {
         transform: none !important;
         opacity: 1 !important;
@@ -488,4 +485,11 @@
         justify-content: center;
         width: 100%;
     }
+    .right-sobre[data-aos-duration="1500"] [data-aos] {
+        transition-duration: 0.2s;
+    }
+    .right-sobre[data-aos] {
+        transition: all 0.2s ease-in-out;
+    }
+    
 }
