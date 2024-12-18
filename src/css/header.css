@@ -1,34 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --font-grande: 'TT Hoves Pro Trial', sans-serif;
-    --font-pequena: 'Merriweather', 'serif';
-    --font-titulo: 'Tourney', 'sans-serif';
-    --color-destaque1: rgb(86, 156, 194);
-    --color-destaque2: rgb(163, 203, 243);
-    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
-    --verde-claro: rgb(188, 233, 228);
-    --cinza-escuro: rgb(70, 84, 90);
-    --azul-claro: rgb(163, 203, 243);
-    --preto: rgb(3, 3, 4);
-    --azul-medio: rgb(86, 156, 194);
-}
-
 /*************** HEADER *****/
 .header {
     user-select: none;
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 2rem 1.2rem;
+    padding: 1.2rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(5px); 
     -webkit-backdrop-filter: blur(10px); 
 }
 
@@ -58,14 +40,14 @@
     display: none;
 }
 
-.hamburger svg {
+.hamburger svg { 
     height: 3em;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line {
     fill: none;
-    stroke: white;
+    stroke: rgba(168, 168, 168, 0.856);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;

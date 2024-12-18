@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;500;700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --font-grande: 'TT Hoves Pro Trial', sans-serif;
-    --font-pequena: 'Merriweather', 'serif';
-    --font-titulo: 'Tourney', 'sans-serif';
-    --color-destaque1: rgb(86, 156, 194);
-    --color-destaque2: rgb(163, 203, 243);
-    --degrade: linear-gradient(90deg, rgb(188, 233, 228), rgb(163, 203, 243), rgb(86, 156, 194));
-    --verde-claro: rgb(188, 233, 228);
-    --cinza-escuro: rgb(70, 84, 90);
-    --azul-claro: rgb(163, 203, 243);
-    --preto: rgb(3, 3, 4);
-    --azul-medio: rgb(86, 156, 194);
-}
-
 /*************** PORTFOLIO *****/
 .portfolio {
     width: 100%;
@@ -24,6 +6,10 @@
     align-items: center;
     justify-content: center;
 
+    background-image: url('/src/img/fundoHome2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container-portfolio {
@@ -36,8 +22,10 @@
 }
 
 .headline-portfolio {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,148 +34,98 @@
 .headline-portfolio .titulo {
     width: 50%;
     font-size: 8vw;
-    font-weight: lighter;
     font-family: var(--font-titulo);
     text-align: center;
 }
 
 .container-case {
-    max-width: 90%;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: .3rem; 
-    padding: 1rem;
+    gap: 0;
 }
 
-.case1,
-.case2,
-.case3,
-.case4 {
-    
-    height: 50vh;
-    position: relative; /* Necessário para posicionar o texto sobre a imagem */
+
+.Saiba-mais {
+
+    margin: 2rem;
 }
 
-.imagens-case {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Saiba-mais span {
+    font-size: 1rem;
+  
 }
-
-.slide {
-    border-radius: 2%;
+.wrapper {
+    height: auto;
+    overflow: hidden;
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
-.slide img:first-child {
-    opacity: 1;
+.wrapper .track {
+    margin-top: 1rem;
+    display: flex;
+    animation: scroll 100s linear infinite;
 }
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
+.wrapper .logo-carrosel {
+    display: inline-block;
+}
+
+.wrapper .logo-carrosel img {
+    height: 50vh;
+    /* Ajuste a altura conforme necessário */
     width: auto;
-    color: var(--color-white);
-    font-size: 2rem;
-    user-select: none;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    opacity: 60%;
-    z-index: 1;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-
-
-.case1 .slide, .case2 .slide, .case3 .slide, .case4 .slide {
-    position: relative; 
-}
-
-.text-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    height: 20%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cor preta semi-transparente */
-    backdrop-filter: blur(10px); /* Aplica o desfoque no fundo */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores baseados no Webkit */
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--color-white);
-    font-size: 2rem;
-    font-weight: bold;
-    opacity: 0; /* Inicialmente escondido */
-    visibility: hidden; /* Esconde o texto */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Animação suave */
-    text-align: center;
-}
-
-/* Exibe o texto quando o hover é aplicado sobre o contêiner */
-.case1:hover .text-overlay, 
-.case2:hover .text-overlay, 
-.case3:hover .text-overlay, 
-.case4:hover .text-overlay {
-    opacity: 1;
-    visibility: visible;
-}
-@media (min-width: 1201px) and (max-width: 1440px){}
-@media (min-width:769px) AND (max-width: 1200px){}
-@media (min-width:481px) AND (max-width: 768px){}
-@media  (max-width: 480px){
-    .headline-portfolio {
-        padding: 2rem;
-        width: 100%;
-        height: 100%;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
 
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* Animação do segundo carrossel (invertido) */
+.wrapper:nth-child(2) .track {
+    animation: scroll-inverted 100s linear infinite;
+}
+
+/* Animação para o segundo carrossel (invertido) */
+@keyframes scroll-inverted {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {}
+
+@media (min-width:769px) AND (max-width: 1200px) {}
+
+@media (min-width:481px) AND (max-width: 768px) {}
+
+@media (max-width: 480px) {
     .headline-portfolio .titulo {
         width: 100%;
         font-size: 3.5rem;
-        font-weight: lighter;
-        font-family: var(--font-titulo);
         text-align: center;
-    }
-    
-    .container-case {
-        max-width: 100%;
+        margin-bottom: 1rem !important;
+    }  
+    .headline-portfolio {
+        margin-top: 2rem;
+        margin-bottom: 0;
         width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: .3rem; 
-        padding: 1rem;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
