@@ -92,7 +92,12 @@
 }
 
 .credits-column p {
+    text-decoration: none;
     margin: 0.2rem 0;
+}
+.credits-column p a {
+    color: var(--color-white);
+    text-decoration: none;
 }
 @media (min-width: 1201px) and (max-width: 1440px){
     .container-footer {
