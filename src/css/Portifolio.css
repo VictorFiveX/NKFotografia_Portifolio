@@ -64,9 +64,11 @@
 }
 
 .wrapper .track {
+    width: calc(100% * 13);
     margin-top: 1rem;
     display: flex;
     animation: scroll 100s linear infinite;
+    flex-wrap: nowrap;
 }
 
 .wrapper .logo-carrosel {
@@ -75,7 +77,6 @@
 
 .wrapper .logo-carrosel img {
     height: 50vh;
-    /* Ajuste a altura conforme necessário */
     width: auto;
 }
 
@@ -90,12 +91,11 @@
 
 }
 
-/* Animação do segundo carrossel (invertido) */
+
 .wrapper:nth-child(2) .track {
     animation: scroll-inverted 100s linear infinite;
 }
 
-/* Animação para o segundo carrossel (invertido) */
 @keyframes scroll-inverted {
     0% {
         transform: translateX(-50%);
