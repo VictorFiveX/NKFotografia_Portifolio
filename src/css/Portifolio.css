@@ -110,7 +110,15 @@
 
 @media (min-width:769px) AND (max-width: 1200px) {}
 
-@media (min-width:481px) AND (max-width: 768px) {}
+@media (min-width:481px) AND (max-width: 768px) {
+    .wrapper .track {
+        animation: scroll 50s linear infinite;
+    }
+    .wrapper:nth-child(2) .track {
+        animation: scroll-inverted 50s linear infinite;
+    }
+}
+
 
 @media (max-width: 480px) {
     .headline-portfolio .titulo {
@@ -127,5 +135,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .wrapper .track {
+        animation: scroll 50s linear infinite;
+    }
+    .wrapper:nth-child(2) .track {
+        animation: scroll-inverted 50s linear infinite;
     }
 }
