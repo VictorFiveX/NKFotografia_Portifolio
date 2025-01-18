@@ -99,6 +99,11 @@
     color: var(--color-white);
     text-decoration: none;
 }
+
+.credits-column a:hover {
+    color: var(--color-destaque1);
+}
+
 @media (min-width: 1201px) and (max-width: 1440px){
     .container-footer {
         width: 100%;
