@@ -67,7 +67,7 @@
     width: calc(100% * 13);
     margin-top: 1rem;
     display: flex;
-    animation: scroll 100s linear infinite;
+    animation: scroll 70s linear infinite;
     flex-wrap: nowrap;
 }
 
@@ -93,7 +93,7 @@
 
 
 .wrapper:nth-child(2) .track {
-    animation: scroll-inverted 100s linear infinite;
+    animation: scroll-inverted 70s linear infinite;
 }
 
 @keyframes scroll-inverted {
